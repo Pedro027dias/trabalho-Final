@@ -1,0 +1,135 @@
+* {
+  font-family: "Arial", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f4f4f4;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2f0f70;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  z-index: 1000;
+}
+
+.top-bar img {
+  position: absolute;
+  left: 15px;
+  width: 70px;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  transition: 0.3s ease;
+}
+
+.top-bar a:hover {
+  transform: scale(1.25);
+  color: #b47aff;
+}
+
+.title {
+  margin-top: 130px;
+}
+
+.title h1 {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.setabaixo{
+  width: 0;
+  height: 0;
+  border-left:9px solid transparent;
+  border-right:9px solid transparent;
+  border-top:20px solid black;
+  animation:pular 1s infinite ease-in-out;
+  margin-left: 10px;
+}
+
+@keyframes pular{
+  0% ,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  
+}
+
+.box {
+  height: 300px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.card img {
+  width: 230px;
+  height: 330px;
+  border-radius: 10px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.card h1 {
+  padding-top: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.card h2 {
+  color: black;
+  font-size: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a h1 {
+  color: #0067b8;
+  text-decoration: underline;
+}
+
+.card a h2 {
+  text-decoration: none;
+}
+
+.box2 {
+  height: 300px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.card:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 1px 24px -1px rgba(77, 19, 77, 0.78);
+  -webkit-box-shadow: 0px 1px 24px -1px rgba(77, 19, 77, 0.78);
+  -moz-box-shadow: 0px 1px 24px -1px rgba(77, 19, 77, 0.78);
+}

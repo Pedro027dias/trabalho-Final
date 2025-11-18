@@ -1,0 +1,159 @@
+* {
+  font-family: "Arial", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  background-color: #2f0f70;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  z-index: 1000;
+}
+
+.top-bar img {
+  position: absolute;
+  left: 15px;
+  width: 70px;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  transition: 0.3s ease;
+}
+
+.top-bar a:hover {
+  transform: scale(1.25);
+  color: #b47aff;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.logo img {
+  height: 450px;
+  width: 600px;
+  border-radius: 15px;
+}
+
+
+.noticias {
+  background-color: #301742;
+  text-align: center;
+  width: 700px;
+  padding: 25px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 50px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.noticias:hover {
+  transform: translateY(-5px);
+}
+
+.noticias a {
+  font-size: 22px;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.4s;
+}
+
+.noticias a:hover {
+  color: #b47aff;
+}
+.setabaixo {
+  width:0;
+  height:0;
+  border-left:7px solid transparent;
+  border-right:7px solid transparent;
+  border-top:15px solid white;
+  animation:pular 1s infinite ease-in-out;
+
+}
+
+@keyframes pular{
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  
+}
+
+#seçao2{
+  margin-top:20px;
+  padding-top: 50px;
+}
+.jogo {
+  background-color: #301742;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.jogo img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.texto-jogo {
+  flex-direction: column; 
+  justify-content: center;
+  color: white;
+}
+
+.texto-jogo h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+texto-jogo p {
+  font-size: 18px;
+}
+
+
+.btn{
+  background: linear-gradient(90deg, #6a0dad, #b47aff);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  width: 500px;
+}
+
+.btn:hover {
+  transform: scale(0.90);
+}
